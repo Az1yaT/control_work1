@@ -16,3 +16,14 @@ void PrintArray(string[] arrString)
         else Console.Write(arrString[i] + "]");
     }
 }
+
+// 3. Находим количество элементов длинной <=3 символам.
+int CountElem(int count)
+{
+    for (int i = 0; i < arrString.Length; i++)
+    {
+        if (arrString[i].Length <= 3)
+            count++;
+    }
+    return count;
+}
