@@ -27,3 +27,27 @@ int CountElem(int count)
     }
     return count;
 }
+
+// 4. Инициализируем и печатаем новый массив с числом элементов в которых содержится <=3 символа.
+int count = 0;
+int countElem = CountElem(count);
+string[] arrNew = new string[countElem];
+void SelectElem(string[] arrNew)
+{
+    for (int i = 0; i < countElem; i++)
+    {
+        string length = arrString[i + 1];
+        if (length.Length <= 3)
+        {
+            arrNew[i] = length;
+        }
+        if (i == 0) Console.Write("[");
+        if (i < arrNew.Length - 1) Console.Write(arrNew[i] + ", ");
+        else Console.Write(arrNew[i] + "]");
+    }
+}
+Console.Write("Исходный массив: ");
+PrintArray(arrString);
+Console.WriteLine("");
+Console.Write("Конечный массив: ");
+SelectElem(arrNew);
