@@ -4,7 +4,7 @@
 
 // 1. Задаем одномерный массив строк: 
 
-string[] arrString = { "hello", "2", "world", ":-)",};
+string[] arrString = { "hello", "2", "world", ":-)"};
 
 // 2. Выводим на печать исходный массив: 
 void PrintArray(string[] arrString)
